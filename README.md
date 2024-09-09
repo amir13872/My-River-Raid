@@ -34,7 +34,7 @@ The project includes:
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/MyRiverRaid.git
+    git clone https://github.com/amir13872/MyRiverRaid.git
     ```
 
 2. **Install Dependencies**
