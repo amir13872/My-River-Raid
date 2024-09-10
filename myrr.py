@@ -10,13 +10,13 @@ pygame.mixer.init()
 
 # Load and play background music
 #music_background
-music_path = "C:/Users/209/OneDrive/Desktop/project/river raid/photo/sounds.mp3"
+music_path = "sounds.mp3"
 pygame.mixer.music.load(music_path)
 pygame.mixer.music.play(-1)  # Play music in a loop
 
 # Load shooting sound
 #shot_sound
-shoot_sound = pygame.mixer.Sound("C:/Users/209/OneDrive/Desktop/project/river raid/photo/shut.mp3")
+shoot_sound = pygame.mixer.Sound("shut.mp3")
 pygame.mixer.init()
 
 # Constants
@@ -38,7 +38,7 @@ BROWN = (139, 69, 19)
 
 # Setup the screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("River Raid Inspired Game")
+pygame.display.set_caption("My River Raid")
 
 # Setup clock for FPS
 clock = pygame.time.Clock()
@@ -49,7 +49,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
         #player_logo
-        player = "C:/Users/209/OneDrive/Desktop/project/river raid/photo/airplan.png"
+        player = "airplan.png"
         self.image = pygame.image.load(player).convert_alpha()
         self.image = pygame.transform.scale(self.image, (60, 60))  # Adjust size as needed
         self.rect = self.image.get_rect()
@@ -97,7 +97,7 @@ class Boat(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
         #boat_logo
-        boat = "C:/Users/209/OneDrive/Desktop/project/river raid/photo/boat.png"
+        boat = "boat.png"
         self.image = pygame.image.load(boat).convert_alpha()
         self.image = pygame.transform.scale(self.image, (50, 25))  # Adjust size as needed
         self.rect = self.image.get_rect()
@@ -109,7 +109,7 @@ class Helicopter(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
         #helicopter_logo
-        helicopter = "C:/Users/209/OneDrive/Desktop/project/river raid/photo/helicopter.png"
+        helicopter = "helicopter.png"
         self.image = pygame.image.load(helicopter).convert_alpha()
         self.image = pygame.transform.scale(self.image, (60, 40))  # Adjust size as needed
         self.rect = self.image.get_rect()
@@ -145,7 +145,7 @@ class Fuel(pygame.sprite.Sprite):
         super().__init__()
         # Load the fuel station image 
         #fuel_logo
-        fuel_image_path = "C:/Users/209/OneDrive/Desktop/project/river raid/photo/fuel.png"
+        fuel_image_path = "fuel.png"
         self.image = pygame.image.load(fuel_image_path).convert_alpha()
         self.image = pygame.transform.scale(self.image, (30, 40))  # Adjust size as needed
         self.rect = self.image.get_rect()
